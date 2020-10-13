@@ -6,12 +6,12 @@
       "**/.*",
       "**/node_modules/**"
     ],
-    "rewrites": [
-      {
-        "source": "/cloudrun",
-        "serviceId": "gcp-nextjs-service",
+    "rewrites": [{
+      "source": "**",
+      "run": {
+        "serviceId": "gcp-host-ssr",
         "region": "europe-west1"
       }
-    ]
+    }]
   }
 }
