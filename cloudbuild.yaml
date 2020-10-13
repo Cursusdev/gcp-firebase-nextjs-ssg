@@ -6,5 +6,5 @@ steps:
   - name: 'gcr.io/cloud-builders/docker'
     args: ['push', 'eu.gcr.io/$PROJECT_ID/gcp-host-ssr:$SHORT_SHA']
   # Deploy to Cloud Run
-  # - name: 'gcr.io/cloud-builders/gcloud'
-  #   args: ['beta', 'run', 'deploy', 'gcp-host-ssr', '--image=eu.gcr.io/$PROJECT_ID/gcp-host-ssr:$SHORT_SHA', '--region=europe-west1']
+  - name: 'gcr.io/cloud-builders/gcloud'
+    args: ['beta', 'run', 'deploy', '--image=eu.gcr.io/$PROJECT_ID/gcp-host-ssr:$SHORT_SHA', '--region=europe-west1']
