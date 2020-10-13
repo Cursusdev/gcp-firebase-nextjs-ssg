@@ -8,7 +8,7 @@
     ],
     "rewrites": [
       {
-        "source": "/cloudrun",
+        "source": "**",
         "run": {
           "serviceId": "gcp-nextjs-service",
           "region": "europe-west1"
