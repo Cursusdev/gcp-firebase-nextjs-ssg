@@ -8,11 +8,9 @@
     ],
     "rewrites": [
       {
-        "source": "**",
-        "run": {
-          "serviceId": "nextServer",
-          "region": "europe-west1"
-        }
+        "source": "/cloudrun",
+        "serviceId": "gcp-nextjs-service",
+        "region": "europe-west1"
       }
     ]
   }

@@ -13,3 +13,6 @@ $ gcloud builds submit --tag eu.gcr.io/gcp-host-ssr/nextjs-blog:latest
 $ gcloud beta run deploy --image eu.gcr.io/gcp-host-ssr/nextjs-blog:latest
 
 $ firebase deploy --only hosting
+
+// source ssg: https://firebase.googleblog.com/2019/04/firebase-hosting-and-cloud-run.html
+
