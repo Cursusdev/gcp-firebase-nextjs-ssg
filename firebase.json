@@ -10,7 +10,7 @@
       {
         "source": "**",
         "run": {
-          "serviceId": "nextjs-server",
+          "serviceId": "nextServer",
           "region": "europe-west1"
         }
       }
