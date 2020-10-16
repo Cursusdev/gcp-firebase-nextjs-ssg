@@ -7,7 +7,11 @@ WORKDIR /usr/src/app
 
 COPY package*.json ./
 
-RUN npm i firebase firebase-tools -g
+RUN npm i -g firebase-tools
+ADD firebase.bash /usr/bin
+RUN chmod +x /usr/bin/firebase.bash
+ENTRYPOINT [ "/usr/bin/firebase.bash" ]
+
 RUN npm install --only=production
 
 COPY . ./
