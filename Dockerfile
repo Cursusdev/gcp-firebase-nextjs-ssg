@@ -7,6 +7,7 @@ WORKDIR /usr/src/app
 
 COPY package*.json ./
 
+RUN npm i firebase -g
 RUN npm install --only=production
 
 COPY . ./
