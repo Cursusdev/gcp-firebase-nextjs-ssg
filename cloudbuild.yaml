@@ -9,5 +9,5 @@ steps:
   - name: 'gcr.io/cloud-builders/gcloud'
     args: ['beta', 'run', 'deploy', 'gcp-nextjs-service', '--image=eu.gcr.io/$PROJECT_ID/gcp-host-ssr:$SHORT_SHA', '--platform=managed', '--region=europe-west1']
   # Deploy to Firebase Platform
-  # - name: gcr.io/$PROJECT_ID/firebase
-  #   args: ['deploy', '--project=$PROJECT_ID', '--only=hosting']
+  - name: gcr.io/$PROJECT_ID/firebase
+    args: ['deploy', '--project=$PROJECT_ID', '--only=hosting']
