@@ -12,10 +12,3 @@ steps:
   # # Deploy to Cloud Run
   # - name: 'gcr.io/cloud-builders/gcloud'
   #   args: ['beta', 'run', 'deploy', 'gcp-nextjs-service', '--image=eu.gcr.io/$PROJECT_ID/gcp-host-ssr:$SHORT_SHA', '--platform=managed', '--region=europe-west1']
-# Encrypted token
-secrets:
-  - kmsKeyName: 'projects/gcp-host-ssr/locations/global/keyRings/cloudbuilder/cryptoKeys/firebase-token'
-    secretEnv:
-      FIREBASE_TOKEN: 'CiQAYYVgo2FXLy/qRuM48keKriu8Vd9r1Yopw6TP8M6kiQi2VdsSPgCRu/MLlJ1kp1ikeoAIMCq0Dn/toSTmUVaViR6zX6PFr8z0qwxfBMjRRGnIcAig8L+S3GpoEqsTke7wHJMv'
-
-
