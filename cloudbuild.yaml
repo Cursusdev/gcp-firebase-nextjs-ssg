@@ -8,7 +8,7 @@ steps:
 
   # Deploy to Firebase Platform
   - name: gcr.io/$PROJECT_ID/firebase
-  args: ['deploy', '--project=gcp-host-ssr', '--only=hosting']
+    args: ['deploy', '--project=gcp-host-ssr', '--only=hosting']
   # Encrypted token
   secrets:
     - kmsKeyName: 'projects/gcp-host-ssr/locations/global/keyRings/cloudbuilder/cryptoKeys/firebase-token'
