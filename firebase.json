@@ -1,17 +1,19 @@
 {
   "hosting": {
-    "public": "public",
+    "public": "build",
     "ignore": [
       "firebase.json",
       "**/.*",
       "**/node_modules/**"
     ],
-    "rewrites": [{
-      "source": "**",
-      "run": {
-        "serviceId": "gcp-nextjs-service",
-        "region": "europe-west1"
+    "rewrites": [
+      {
+        "source": "**",
+        "run": {
+          "serviceId": "gcp-nextjs-service",
+          "region": "europe-west1"
+        }
       }
-    }]
+    ]
   }
 }
